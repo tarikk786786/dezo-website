@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Instrument Serif', Georgia, serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+    --bg-dezo: #f5f3ee;
+    --surface-dezo: #ffffff;
+    --border-dezo: rgba(11, 11, 10, 0.1);
+    --primary-dezo: #b08d57;
+    --accent-dezo: #b08d57;
+    --ink-dezo: #0b0b0a;
+  }
+
+  body {
+    background-color: var(--bg-dezo);
+    color: var(--ink-dezo);
+    font-family: var(--font-sans);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.bg-dezo-bg {
+  background-color: #f5f3ee;
+}
+
+.bg-dezo-bg-warm {
+  background-color: #f0ede5;
+}
+
+.bg-dezo-surface {
+  background-color: #ffffff;
+}
+
+.bg-dezo-ink {
+  background-color: #0b0b0a;
+}
+
+.bg-dezo-primary {
+  background-color: #b08d57;
+}
+
+.text-dezo-primary {
+  color: #b08d57;
+}
+
+.text-dezo-text-primary {
+  color: #0b0b0a;
+}
+
+.text-dezo-text-secondary {
+  color: #555451;
+}
+
+.text-dezo-text-muted {
+  color: #8c8b87;
+}
+
+.text-dezo-text-inverse {
+  color: #f5f3ee;
+}
+
+.border-dezo-border {
+  border-color: rgba(11, 11, 10, 0.1);
+}
+
+.border-dezo-ink {
+  border-color: #0b0b0a;
+}
+
+/* Custom scrollbars and animations */
+::selection {
+  background-color: #b08d57;
+  color: #ffffff;
+}
+
+@keyframes pulseSlow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 4s ease-in-out infinite;
+}
