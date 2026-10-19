@@ -2,6 +2,9 @@
 
 Full-stack clone and production-grade implementation of the **DEZO** website (`https://dezo.in`), engineered with modern React, TypeScript, Tailwind CSS, and a real-time HTTP/TLS probing engine.
 
+- **Live URL**: [https://tarikk786786.github.io/dezo-website/](https://tarikk786786.github.io/dezo-website/)
+- **GitHub Repository**: [https://github.com/tarikk786786/dezo-website](https://github.com/tarikk786786/dezo-website)
+
 ---
 
 ## 🚀 Features & Capabilities
