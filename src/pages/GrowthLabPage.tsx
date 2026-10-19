@@ -2,7 +2,6 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { TOOL_DEFINITIONS, ToolKey } from '../toolsEngine';
 import { GrowthLab } from '../components/GrowthLab';
-import { BacklinksGenerator } from '../components/BacklinksGenerator';
 import { ArrowUpRight } from 'lucide-react';
 
 export const GrowthLabPage: React.FC = () => {
@@ -22,22 +21,14 @@ export const GrowthLabPage: React.FC = () => {
               Diagnostic & Audit Suite
             </h1>
             <p className="text-base sm:text-lg text-[#555451] leading-relaxed">
-              Real-time HTTP/TLS probing, Core Web Vitals diagnostics, 150+ backlink indexing submissions, Schema verification, and marketplace readiness scoring. 100% free, safe, and anonymous.
+              Real-time HTTP/TLS probing, Core Web Vitals diagnostics, Schema verification, and marketplace readiness scoring. 100% free, safe, and anonymous.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Main GrowthLab Scanner or Backlinks Tool */}
-      {activeTool === 'backlinks' ? (
-        <section className="w-full py-12 bg-[#F5F3EE]">
-          <div className="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
-            <BacklinksGenerator />
-          </div>
-        </section>
-      ) : (
-        <GrowthLab initialTool={activeTool} standalone />
-      )}
+      {/* Main GrowthLab Scanner */}
+      <GrowthLab initialTool={activeTool} standalone />
 
       {/* Directory of dedicated tool pages */}
       <section className="w-full py-16 bg-white border-t border-[#0B0B0A]/10">

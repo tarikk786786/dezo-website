@@ -9,8 +9,7 @@ export type ToolKey =
   | 'local-seo' 
   | 'brand' 
   | 'amazon' 
-  | 'flipkart'
-  | 'backlinks';
+  | 'flipkart';
 
 export interface ToolMeta {
   name: string;
@@ -100,14 +99,6 @@ export const TOOL_DEFINITIONS: Record<ToolKey, ToolMeta> = {
     example: "https://www.flipkart.com",
     description: "Demo checklist from the product URL — not connected to Flipkart APIs.",
     subheading: "F-Assured readiness checklist"
-  },
-  backlinks: {
-    name: "Backlinks Generator",
-    badge: "NEW",
-    placeholder: "Enter website domain or page URL",
-    example: "dezo.in",
-    description: "Generate 150+ high-authority directory profiles, SEO audit anchors, and indexing submissions.",
-    subheading: "150+ High-DA Submissions & Pings"
   }
 };
 
