@@ -101,6 +101,7 @@ function probeApiPlugin(): Plugin {
 }
 
 export default defineConfig({
+  base: './',
   plugins: [react(), tailwindcss(), probeApiPlugin()],
   server: {
     port: 5173,
